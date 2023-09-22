@@ -16,7 +16,7 @@ export default function Dashboard({auth, featuredMovies, movies}) {
     };
 
     return (
-        <Authenticated user={auth.user}>
+        <Authenticated auth={auth}>
             <Head title="Dashboard">
                 <link
                     rel="stylesheet"

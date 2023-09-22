@@ -11,8 +11,8 @@ class UserSubscription extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['user_id', 'subscription_plan_id', 'price', 'expired_date', 'payment_status', 'snapToken'];
-
+    protected $fillable = ['user_id', 'subscription_plan_id', 'price', 'expired_date', 'payment_status', 'snapToken']
+;
     public function subscriptionPlan(): BelongsTo
     {
         return $this->BelongsTo(SubscriptionPlan::class);
