@@ -20,7 +20,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Anime',
                 'video_url' => 'https://www.youtube.com/watch?v=HlkXc6GW2Js&ab_channel=DevilNoMi',
                 'thumbnail' => 'https://picsum.photos/id/1/300/300',
-                'rating' => 9.3,
+                'rating' => 4.5,
                 'isFeatured' => 1,
             ],
             [
@@ -29,7 +29,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=mqqft2x_Aa4&ab_channel=WarnerBros.Pictures',
                 'thumbnail' => 'https://picsum.photos/id/1/300/300',
-                'rating' => 9.0,
+                'rating' => 4.9,
                 'isFeatured' => 1,
             ],
             [
@@ -38,7 +38,7 @@ class MovieTableSeeder extends Seeder
                 'category' => 'Action',
                 'video_url' => 'https://www.youtube.com/watch?v=XNd0OJK7Ze8&ab_channel=AllPowersExplained',
                 'thumbnail' => 'https://picsum.photos/id/1/300/300',
-                'rating' => 6.0,
+                'rating' => 4.2,
                 'isFeatured' => 1,
             ]
         ];

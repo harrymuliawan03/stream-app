@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\User\DashboardController;
+use App\Http\Controllers\User\MovieController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -15,11 +17,12 @@ use Inertia\Inertia;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::redirect('/', '/prototype/login');
+Route::redirect('/', '/login');
 
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::middleware(['auth', 'role:user'])->prefix('dashboard')->name('user.dashboard.')->group(function() {
+    Route::get('/', [DashboardController::class, 'index'])->name('index');
+    Route::get('movie/{movie:slug}', [MovieController::class, 'show'])->name('movie.show');
+});
 
 Route::prefix('prototype')->name('prototype.')->group(function () {
     route::get('/login', function() {
