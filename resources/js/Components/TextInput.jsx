@@ -25,7 +25,7 @@ const Input =  forwardRef(function TextInput(
 
 
 Input.propTypes = {
-    type: PropTypes.oneOf(["text", "email", "password", "number", "file"]),
+    type: PropTypes.oneOf(["text", "email", "password", "number", "file", "url"]),
     name: PropTypes.string,
     value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     defaultValue: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -36,7 +36,7 @@ Input.propTypes = {
     isFocused: PropTypes.bool,
     handleChange: PropTypes.func,
     placeholder: PropTypes.string,
-    isError: PropTypes.bool,
+    isError: PropTypes.string,
 };
 
 export default Input;
