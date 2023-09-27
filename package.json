@@ -23,6 +23,9 @@
         "flickity": "^2.3.0",
         "prop-types": "^15.8.1",
         "react-flickity-component": "^4.0.6",
-        "react-player": "^2.13.0"
+        "react-loading-skeleton": "^3.3.1",
+        "react-modal": "^3.16.1",
+        "react-player": "^2.13.0",
+        "react-toastify": "^9.1.3"
     }
 }
