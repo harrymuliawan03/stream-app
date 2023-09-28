@@ -13,7 +13,7 @@ export default function MovieCard({ slug, name, category, thumbnail }) {
         <div className="absolute group overflow-hidden mr-[30px]">
             {/* <!-- Movies 1 --> */}
             <img
-                src={thumbnail}
+                src={`/storage/${thumbnail}`}
                 className="object-cover rounded-[30px] h-[340px] w-[250px]"
                 alt=""
             />
